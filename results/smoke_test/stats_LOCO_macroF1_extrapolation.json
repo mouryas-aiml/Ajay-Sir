@@ -1,0 +1,34 @@
+{
+  "metric": "macroF1",
+  "protocol": "LOCO",
+  "tier": "extrapolation",
+  "n_blocks": 2,
+  "data_source": "SYNTHETIC",
+  "mean_ranks": {
+    "WST": 4.0,
+    "FruitHSNet": 4.0,
+    "DeepHSNet-Lite": 4.0,
+    "SpectralFormer-Lite": 4.0,
+    "SSFTT-Lite": 4.0,
+    "PLS": 4.0,
+    "LightGBM": 4.0
+  },
+  "friedman_note": "undefined: every model is tied in every configuration",
+  "wilcoxon_p_raw": {
+    "FruitHSNet": 1.0,
+    "DeepHSNet-Lite": 1.0,
+    "SpectralFormer-Lite": 1.0,
+    "SSFTT-Lite": 1.0,
+    "PLS": 1.0,
+    "LightGBM": 1.0
+  },
+  "wilcoxon_p_holm": {
+    "FruitHSNet": 1.0,
+    "DeepHSNet-Lite": 1.0,
+    "SpectralFormer-Lite": 1.0,
+    "SSFTT-Lite": 1.0,
+    "PLS": 1.0,
+    "LightGBM": 1.0
+  },
+  "strongest_baseline_by_validation": "LightGBM"
+}

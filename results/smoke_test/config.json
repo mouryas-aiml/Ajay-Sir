@@ -1,0 +1,145 @@
+{
+  "RUN_MODE": "SMOKE_TEST",
+  "DATA_SOURCE": "SYNTHETIC",
+  "SEEDS": [
+    0,
+    1
+  ],
+  "CFG": {
+    "fruits": [
+      "mango",
+      "kiwi"
+    ],
+    "tasks": [
+      "ripeness"
+    ],
+    "deephs_hw": [
+      32,
+      32
+    ],
+    "leaf_hw": [
+      24,
+      88
+    ],
+    "normalise": "auto",
+    "cache_gb": 2.0,
+    "workers": 0,
+    "split_fracs": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "d_model": 64,
+    "n_heads": 4,
+    "n_layers": 2,
+    "spatial_tokens": 4,
+    "batch": 8,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "pretrain_epochs": 1,
+    "mask_ratio": 0.5,
+    "epochs": 4,
+    "patience": 30,
+    "min_steps": 0,
+    "aug_fwhm_scale": [
+      1.0,
+      2.5
+    ],
+    "aug_shift_nm": 3.0,
+    "aug_band_drop": 0.2,
+    "protocols": [
+      "LOCO",
+      "WITHIN",
+      "DAY"
+    ],
+    "run_ablations": true,
+    "eff_epochs": 1,
+    "eff_repeats": 20,
+    "energy_min_seconds": 2.0,
+    "throughput_batch": 16,
+    "country_iso": "IND"
+  },
+  "FIELD_CANDIDATES": {
+    "path": [
+      "files.header_file",
+      "header_file",
+      "path",
+      "file",
+      "filename"
+    ],
+    "fruit": [
+      "fruit",
+      "fruit_type"
+    ],
+    "camera": [
+      "camera_type",
+      "camera"
+    ],
+    "fruit_id": [
+      "fruit_id",
+      "object_id",
+      "id_fruit",
+      "fruit_number"
+    ],
+    "day": [
+      "day",
+      "measurement_day",
+      "series_day"
+    ],
+    "side": [
+      "side"
+    ],
+    "ripeness": [
+      "label.ripeness_state",
+      "ripeness_state",
+      "ripeness"
+    ],
+    "firmness": [
+      "label.firmness_state",
+      "firmness_state",
+      "firmness"
+    ],
+    "sweetness": [
+      "label.sweetness_state",
+      "sweetness_state",
+      "sweetness",
+      "label.sugar_state"
+    ]
+  },
+  "HLEAF_SCHEMA": {
+    "id_col": null,
+    "plot_col": null,
+    "cultivar_col": null
+  },
+  "CAMERA_GRIDS": {
+    "SPECIM_FX10": [
+      397.66,
+      1003.81,
+      224
+    ],
+    "CORNING_HSI": [
+      408.034,
+      901.256,
+      249
+    ],
+    "INNOSPEC_REDEYE": [
+      919.678,
+      1727.04,
+      252
+    ]
+  },
+  "MAIN_MODELS": [
+    "WST",
+    "FruitHSNet",
+    "DeepHSNet-Lite",
+    "SpectralFormer-Lite",
+    "SSFTT-Lite",
+    "PLS",
+    "LightGBM"
+  ],
+  "ABLATION_MODELS": [
+    "WST-noWavelength",
+    "WST-noPretrain",
+    "WST-noResampleAug"
+  ]
+}

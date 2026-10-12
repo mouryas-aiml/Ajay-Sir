@@ -1,0 +1,8 @@
+model,WST,FruitHSNet,DeepHSNet-Lite,SpectralFormer-Lite,SSFTT-Lite,PLS,LightGBM
+WST,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+FruitHSNet,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+DeepHSNet-Lite,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+SpectralFormer-Lite,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+SSFTT-Lite,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+PLS,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+LightGBM,1.0,1.0,1.0,1.0,1.0,1.0,1.0

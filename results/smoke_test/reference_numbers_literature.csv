@@ -1,0 +1,7 @@
+dataset,quantity,value,source
+DeepHS Fruit,Fruit-HSNet overall accuracy (%),70.73,arXiv:2608.01202
+DeepHS Fruit,DeepHS-Net overall accuracy (%),58.28,"arXiv:2608.01202, Table 1"
+DeepHS Fruit,DeepHS-Net + HyveConv overall accuracy (%),57.57,"arXiv:2608.01202, Table 1"
+DeepHS Fruit,SpectralFormer overall accuracy (%),41.71,"arXiv:2608.01202, Table 1"
+HyperLeaf2024,ConvNeXt-S 2D-pretrained cultivar accuracy,0.893,"Laprade et al., CVPRW 2024"
+HyperLeaf2024,ConvNeXt-S 1D mean standardised MSE,0.383,"Laprade et al., CVPRW 2024"

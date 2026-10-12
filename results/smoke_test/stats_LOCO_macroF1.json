@@ -1,0 +1,35 @@
+{
+  "metric": "macroF1",
+  "protocol": "LOCO",
+  "tier": "all",
+  "n_blocks": 4,
+  "data_source": "SYNTHETIC",
+  "mean_ranks": {
+    "WST": 4.5,
+    "FruitHSNet": 3.0,
+    "DeepHSNet-Lite": 4.5,
+    "SpectralFormer-Lite": 4.5,
+    "SSFTT-Lite": 4.5,
+    "PLS": 4.5,
+    "LightGBM": 2.5
+  },
+  "friedman_chi2": 11.99999999999997,
+  "friedman_p": 0.06196880441665963,
+  "wilcoxon_p_raw": {
+    "FruitHSNet": 0.5,
+    "DeepHSNet-Lite": 1.0,
+    "SpectralFormer-Lite": 1.0,
+    "SSFTT-Lite": 1.0,
+    "PLS": 1.0,
+    "LightGBM": 0.5
+  },
+  "wilcoxon_p_holm": {
+    "FruitHSNet": 1.0,
+    "LightGBM": 1.0,
+    "DeepHSNet-Lite": 1.0,
+    "SpectralFormer-Lite": 1.0,
+    "SSFTT-Lite": 1.0,
+    "PLS": 1.0
+  },
+  "strongest_baseline_by_validation": "LightGBM"
+}
